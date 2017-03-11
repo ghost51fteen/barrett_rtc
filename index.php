@@ -1,2 +1,3 @@
-Test
-Double test
+<html>
+<center><b>Hello, World!</b></center>
+</html>
