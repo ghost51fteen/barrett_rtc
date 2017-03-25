@@ -9,6 +9,6 @@ app.get('/', function (req, res) {
   res.render('index');
 })
 
-app.listen(3005, function () {
-  console.log('Lil Pug app listening at localhost 3005!')
+app.listen(80, function () {
+  console.log('App Running on port 80');
 })
