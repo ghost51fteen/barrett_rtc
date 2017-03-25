@@ -1,0 +1,33 @@
+{
+  "name": "barrett_rtc",
+  "version": "0.1.0",
+  "description": "simplepeer rtc",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandabearit/barrett_rtc.git"
+  },
+  "keywords": [
+    "web",
+    "rtc",
+    "webrtc",
+    "peer",
+    "p2p",
+    "simple",
+    "simplepeer"
+  ],
+  "author": "barrett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pandabearit/barrett_rtc/issues"
+  },
+  "homepage": "https://github.com/pandabearit/barrett_rtc#readme"
+}

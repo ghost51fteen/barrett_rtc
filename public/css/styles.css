@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,700,900);
+html {
+  width: 100%;
+  display: block;
+  font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: 300;
+  color: #ECEFF1;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding: 0 50px 0 50px;
+  margin: 0 auto 0 auto;
+  max-width: 1200px;
+  background-color: #222222;
+  font-weight: 200;
+}
+
+#header {
+  height: 50vh;
+  width: 90vw;
+  background: url() no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  transition: all 200ms ease;
+}
+
+.navbar {
+  box-sizing: content-box;
+  display: inline;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  width: 100%;
+  max-height: 100px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #222222;
+  border-bottom: 7px solid #757575;
+  padding: 10px 5px 12px 20px;
+  line-height: 100px;
+  z-index: 9999;
+}
+
+#icon_toggle {
+  display: none;
+}
+#icon_toggle:checked + .content_shell #nav_drawer {
+  opacity: 1;
+  left: 0px;
+  z-index: 100;
+}
+#icon_toggle:checked + .content_shell .carousel {
+  left: 40vw;
+}
+#icon_toggle:checked + .content_shell .navbar {
+  left: 40vw;
+}
+
+.icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+}
+
+#nav_drawer {
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  position: fixed;
+  width: 40vw;
+  height: 100%;
+  left: -40vw;
+  border-right: 3px solid #ecf0f1;
+  background: #424242;
+  padding: 20px 0 20px 70px;
+  z-index: 0;
+  -webkit-overflow-scrolling: touch;
+}
+#nav_drawer #drawer_menu li {
+  display: block;
+  padding: 5px;
+  border-left: 5px solid #E0E0E0;
+  font-size: 2em;
+  text-align: right;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+}
+#nav_drawer #drawer_menu li:hover {
+  cursor: pointer;
+  color: #222222;
+  border-left: 5px solid #222222;
+  font-weight: 500;
+}
+
+#banner {
+  float: right;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+#banner #banner_menu ul {
+  list-style: none;
+}
+#banner #banner_menu li {
+  display: inline;
+  padding: 35px 30px;
+  border-bottom: 2px;
+}
+#banner #banner_menu li:hover {
+  font-weight: 600;
+  border-bottom: 3px solid;
+  opacity: 0.75;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+
+#head_logo {
+  padding: 0 5px 0 50px;
+  max-width: 200px;
+}
+#head_logo img {
+  max-height: 100px;
+}
+
+.carousel {
+  display: block;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  position: absolute;
+  top: 135px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 100px);
+  background-color: #222222;
+  padding: 20px;
+  z-index: 99;
+  -webkit-overflow-scrolling: touch;
+}
+.carousel #header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page_wrap {
+  box-sizing: content-block;
+  display: block;
+}
+
+.toggle {
+  position: absolute;
+  left: 0.7em;
+  font-size: 5em;
+  line-height: 90px;
+  z-index: 200;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.toggle:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.strong {
+  font-weight: 400;
+}
+
+.med {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 2800px) {
+  #head_logo {
+    float: left;
+  }
+
+  label {
+    display: none;
+  }
+
+  #nav_drawer {
+    display: none;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .container {
+    font-size: 1.7em;
+  }
+
+  #banner {
+    display: none;
+  }
+
+  .carousel {
+    height: 60vh;
+  }
+
+  .container {
+    max-width: 850px;
+  }
+
+  #page_wrap {
+    height: 100%;
+  }
+
+  #head_logo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  label {
+    display: inline;
+  }
+
+  #nav_drawer {
+    display: block;
+  }
+}
